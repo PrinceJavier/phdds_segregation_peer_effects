@@ -103,7 +103,7 @@ def run_thresh_sim(neighborhood, props, thresh, new_dir):
     # save gif
     filenames = glob.glob(f"{new_dir}/*.png")
     filenames = sorted(filenames)
-    filenames = filenames + [filenames[-1]] * 20 # so we freeze at the output
+    filenames = filenames + [filenames[-1]] * 15 # so we freeze at the output
     images=[]
     for filename in filenames:
         images.append(imageio.imread(filename))

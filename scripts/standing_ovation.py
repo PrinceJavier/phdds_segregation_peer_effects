@@ -21,7 +21,11 @@ def norm_dist(x, mean, stdev):
 
 def plot_standing_ovation(**params):
     n = params['n']
-    q_thresh = params['q_thresh']   
+    q_thresh = params['q_thresh']     
+    q_mean = params['q_mean']    
+    q_stdev = params['q_stdev']    
+    p_mean = params['p_mean']      
+    p_stdev = params['p_stdev']   
     seed=params['seed']
 
     dir_ = f"charts/standing_ovation/seed_{seed}_n_{n}_q_mean_{q_mean}_q_stdev_{q_stdev}_p_mean_{p_mean}_p_stdev_{p_stdev}"   
